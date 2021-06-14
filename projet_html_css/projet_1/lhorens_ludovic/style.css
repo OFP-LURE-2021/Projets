@@ -1,0 +1,135 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: brown;
+    margin:auto;
+    color:black;
+}
+h1{
+    text-align: center;
+    width:30%;
+    font-size:50px;
+    margin:auto;
+    border:4px grey solid;
+    background-color: white;
+}
+h2{
+    color:white;
+    text-decoration: underline;
+    text-align:center;
+}
+.main{
+    display:flex;
+    position:relative;
+    text-align: center;
+}
+.mainGauche{
+    background-color: white;
+    padding:10px;
+    width:30%;
+    height:500px;
+    margin:auto;
+    border:2px gold solid;
+    display: flex;
+    flex-direction: column;
+}
+.mainDroite{
+    background-color: white;
+    padding:10px;
+    width:30%;
+    height:500px;
+    border:2px gold solid;
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+}
+.mainCentre{
+    background-color: white;
+    padding:10px;
+    width:30%;
+    height:500px;
+    margin:auto;
+    border:2px gold solid;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    border-top: 2px white solid;
+    width:100%;
+    position: absolute;
+    bottom: 0;
+    text-align: right;
+
+    margin:auto;
+    background-color: white;
+}
+img{
+    text-align: center;
+    margin: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+    h1{
+        text-align: center;
+        width:350px;
+        font-size:50px;
+        margin:auto;
+        border:4px grey solid;
+        background-color: white;
+    }
+    .main{
+        display:flex;
+        position:relative;
+        text-align: center;
+        flex-direction: column;
+        margin: auto;
+    }
+    .mainGauche{
+        background-color: white;
+        padding:10px;
+        width:350px;
+        height:500px;
+        margin:auto;
+        margin-bottom: 10px;
+        border:2px gold solid;
+        display: flex;
+        flex-direction: column;
+    }
+    .mainDroite{
+        background-color: white;
+        padding:10px;
+        width:350px;
+        height:500px;
+        border:2px gold solid;
+        display: flex;
+        flex-direction: column;
+        margin:auto;
+        margin-bottom: 10px;
+    }
+    .mainCentre{
+        background-color: white;
+        padding:10px;
+        width:350px;
+        height:500px;
+        margin:auto;
+        margin-bottom: 10px;
+        border:2px gold solid;
+        display: flex;
+        flex-direction: column;
+    }
+    img{
+        text-align: center;
+        margin: auto;
+        height: 5%;
+        width: 5%;
+    }
+    footer{
+        border-top: 2px white solid;
+        width:100%;
+        position: fixed;
+        bottom: 0%;
+        text-align: right;
+
+        background-color: white;
+    
+    }
+  }
