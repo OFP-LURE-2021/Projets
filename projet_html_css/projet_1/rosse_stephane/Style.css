@@ -1,0 +1,29 @@
+html{
+    background-color: rgb(170, 102, 102);
+}
+
+.header-title{
+    text-align: center;
+}
+
+.p2{
+    text-align: right;
+}
+
+
+a {
+    display: inline-block;
+} 
+
+.container {
+    display: flex;
+  }
+  
+  .item {
+    flex: 1;
+  } 
+
+
+
+
+
