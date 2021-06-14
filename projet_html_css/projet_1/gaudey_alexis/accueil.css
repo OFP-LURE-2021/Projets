@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+}
+header {
+    background-color: rgb(185, 157, 117);
+    padding: 0, 15px;
+}
+footer {
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
+    background-color: rgb(180, 110, 63);
+}
+header ,section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul, li {
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+h1 {
+  text-align: center;
+  padding-right: 200px 15px;
+}
+
+.moulin_vent {
+    display: flex;
+    margin: auto;
+    float: left; 
+    width: 400px;
+}
+
+.borne_arcade {
+    display: flex;
+    margin: auto;
+    float: right; 
+    width: 400px;
+}
+section, img {
+    padding: 20px;
+    background-color: rgb(185, 157, 117);
+}
+.deco {
+    text-align: center;
+    background-color: rgb(180, 110, 63);
+    margin: 0;
+}
+img {
+    width: 100%;
+}
