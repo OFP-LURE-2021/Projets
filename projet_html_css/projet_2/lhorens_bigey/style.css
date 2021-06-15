@@ -1,0 +1,199 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin: auto;
+    background-color: black;
+
+    }
+
+.titre{
+    margin: auto;
+    background-color: yellow;
+    width: 100%;
+    height: 80px;
+    margin-top: 0%;
+    padding: 10px;
+    margin-bottom: 0%;
+    border-top: black 15px solid;
+    display: flex;
+}
+.titre img{
+    margin: auto;
+    text-align: center;
+    width: 68px;
+    height: 68px;
+}
+    *{
+    margin: px;
+    padding: 0px;
+    }
+    
+    nav{
+    height: 40px;
+    width: 100%;
+    margin: 0 auto;
+    position: sticky;
+    top: 0px;
+    border-top: black 5px solid;
+    }
+    
+    nav ul{
+    list-style-type: none;
+    margin-top: 0%;
+
+    }
+    
+    nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    background-color: yellow;
+    color: black;
+    }
+    
+    nav ul ::after{
+    content: "";
+    display: table;
+    clear: both;
+    
+    }
+    
+    nav a{
+    display: block;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+    color: inherit;
+    }
+    
+    nav a:hover{
+    color: yellow;
+    border-bottom: 2px solid gold;
+
+    }
+    
+    .sous{
+    display: none;
+    box-shadow: 0px 1 px 2px #CCC;
+    background-color: white;
+    color: black;
+    }
+    nav ul li:hover{
+        background-color: black;
+        color: yellow;
+        
+    }
+    nav > ul li:hover .sous{
+    display: block;
+    background-color: black;
+    color: yellow;
+    }
+    
+    .sous li{
+    float: none;
+    width: 100%;
+    text-align: center;
+    
+    }
+    .sous a{
+    padding: 10px;
+    border-bottom: none;
+    
+    }
+
+    .sous a:hover{
+    border-bottom: none;
+    background-color: rgba(200, 200, 200, 0.1);
+    
+    }
+    .deroulant > a::after{
+    font-size: 12px;
+    
+    }
+    .sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    
+    }
+    nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+    
+    }
+
+.main{
+    margin: auto;
+    width: 75%;
+    height:100%;
+    border: black 5px solid;
+    background-color: white;
+    font-size: 15px;
+}
+.contact{
+    margin-top:20px;
+}
+form {
+    margin: 0 auto;
+    width: 300px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    }
+    
+    form div + div {
+    margin-top: 1em;
+    }
+    
+    label {
+    display: inline-block;
+    width: 300px;
+    text-align: left;
+    }
+    
+    input, textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    }
+    
+    input:focus, textarea:focus {
+    border-color: #000;
+    }
+    
+    textarea {
+    vertical-align: top;
+    height: 5em;
+    }
+    
+    .button {
+    padding-left: 90px;
+    }
+    
+    button {
+    margin-left: .5em;
+    }
+    
+.main p {
+    text-align: justify;
+    margin:5px;
+    padding: 10px;
+}
+.accueil{
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 850px) {
+    .main img{
+        margin: auto;
+        width: 50%;
+        height: 50%;
+
+    }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr"> 
+    <head>
+        <title> Index HTML CSS </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="icon.ico" />  
+    </head>
+    <body>
+        <header>
+            <div class="titre">
+                <img src="https://acegif.com/wp-content/uploads/2020/b72nv6/partyparrt-21.gif" alt="Parrot">
+                <h1>L'HTML et le CSS pour les NEWBIES</h1>
+                <img src="https://acegif.com/wp-content/uploads/2020/b72nv6/partyparrt-21.gif" alt="Parrot">
+            </div>
+
+            <nav>
+                <ul>
+                <li><a href="home.html">Menu</a></li>
+                <li class="deroulant"><a href="presentHtml.html">HTML5</a>
+                <ul class="sous">
+                <li><a href="presentHtml.html">présentation</a></li>
+                <li><a href="indexHtml.html">balisage</a></li>
+                </ul>
+                </li>
+                <li class="deroulant"><a href="presentCss.html">CSS3</a>
+                <ul class="sous">
+                <li><a href="presentCss.html">présentation</a></li>
+                <li><a href="indexCss.html">selecteur</a></li>
+                </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+                </nav>
+        </header>
+        <div class="main">
+            <h2>Les sélecteurs CSS</h2>
+            <p>
+                Ce groupe inclut les sélecteurs ciblant les élements HTML :
+                <br>h1 { }
+            </p>
+            <p>On trouve aussi les sélecteurs ciblant une classe :
+              <br>  .box { }
+              <br>ou une  ID :
+                #unique { }
+            </p>
+            <p>
+            </p>
+            <p>Sélecteurs d'attribut :
+                <br>Ce groupe de sélecteurs offre différents mécanismes pour cibler des éléments en fonction de la présence d'un attribut donné pour un élément donné :
+            </p>
+            <p>Ou même de baser la sélection sur la présence d'un attribut avec une valeur bien précise :
+                <br>a[href="https://example.com"] { }
+            </p>
+            <p>Pseudo-classes et pseudo-éléments :
+                <br>Ce groupe de sélecteurs inclut les pseudo-classes, qui ciblent des éléments dans un état donné. 
+                <br>Par exemple, la pseudo-classe :hover sélectionne un élément seulement s'il est survolé par le pointeur de la souris :
+               <br> a:hover { }
+            </p>
+            <p>Ce groupe inclut aussi les pseudo-éléments, qui ciblent une certaine partie d'un élément plutôt que l'élément tout entier.<br>
+                Par exemple, ::first-line sélectionne la première ligne d'un texte contenu dans un élément , comme si la première ligne du texte mis en forme et qu'après coup on appliquait un style sur cet élément.
+              <br> p::first-line { }
+            </p>
+            <p>Combinateurs<br>
+                Dans la dernière catégorie, on combine les sélecteurs pour cibler plus finement les éléments dans nos documents. <br>
+                L'exemple suivant sélectionne les paragraphes enfants directs  grâce au combinateur enfant (>) :
+                <br>article > p { }
+            </p>     
+            Pour de plus ample informations, se rendre sur ce site:
+            <br>  
+            <a href="https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/Selectors">https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/Selectors</a> <br> <br>
+            <img src="https://i.imgflip.com/4guflg.jpg" alt="Swag Doggo">
+        </div>  
+    </body>
+</html>
