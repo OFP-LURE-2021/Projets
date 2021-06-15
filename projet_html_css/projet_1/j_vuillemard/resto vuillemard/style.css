@@ -1,0 +1,75 @@
+body {
+  background-color: #1f232d;
+  color: #fff;
+  font-size: 16px;
+  font-family: Inter,sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.title{
+  text-align: center;
+  font-size: 40px;
+  color: chartreuse;
+}
+
+img {
+  width: 400px;
+  padding: 10px;
+  margin-top: 4em;
+}
+.center_img {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  float: left;
+  margin: 20px;
+}
+.legend {
+  text-align: center;
+  color: chartreuse;
+}
+.steak-frites{
+  width: 400px;
+}
+.repas{
+  width: 400px;
+  height: 200px;
+}
+.hr {
+  border: 1px solid #d4dcff;
+  width: 70%;
+  margin: auto;
+  margin-top: 4em;
+}
+.footer{
+  margin: auto;
+    width: 70%;
+    margin-top: 1em;
+    text-align: right;
+    color: chartreuse;
+}
+
+@media (max-width: 480px) {
+  .center_img {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .steak-frites {
+      width: 100%;
+      padding: 0;
+  }
+
+  .repas {
+      width: 100%;
+      padding: 0;
+
+  }
+
+  .hr {
+      width: 100%;
+  }
+    }
