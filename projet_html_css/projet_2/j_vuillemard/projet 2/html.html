@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>cours html et css</title>
+    <meta charset="UTF-8">
+    <link href="css.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="deroulant"><a href="html.html">accueil;</a>
+                <ul class="sous">
+                    <li><a href="cours_html.html">cours html</a> </li>
+                    <li><a href="cours_css.html">cours CSS</a></li>
+                </ul>
+            </li>
+        </ul>
+           
+    </nav>
+    
+    <h1 class="mt1 ml1">Les bases du HTML</h1>
+    <p class="mb1 mr1 mt1 ml1">
+        HyperText Markup Language (HTML) est le code utilisé pour structurer une page web et son contenu. <br> Par exemple, le contenu de votre page pourra être structuré en un ensemble de paragraphes, une liste à puces ou avec des images et des tableaux de données.<br> Comme le suggère le titre, cet article vous fournit les bases de compréhension du HTML et de ses fonctions.
+    </p>
+    <h2 class="mt1 mb1 ml1">Qu'est-ce que HTML, réellement ?</h2>
+    <p class="mb1 mr1 ml1">
+        HTML n'est pas un langage de programmation. <br> C'est un langage de balises qui définit la structure de votre contenu. <br> HTML se compose d'une série d'éléments, utilisés pour entourer, ou envelopper, les diverses parties du contenu pour les faire apparaître ou agir d'une certaine façon. <br> Les balises entourantes peuvent être rendues par un mot ou une image lien hypertexte vers quelque chose d'autre, un texte en italique, une police plus grande ou plus petite, et ainsi de suite. Par exemple, avec la ligne de contenu suivante :
+    </p>
+    <pre class="notranslate">Mon chat est très grincheux</pre>
+    
+    <p class="mt1 mb1 mr1 ml1">Si vous souhaitez que cette ligne reste ainsi, nous indiquerons qu'il s'agit d'un paragraphe en l'entourant des balises paragraphe :</p>
+    
+    <pre class="notranslate mb1">&lt;p&gt;Mon chat est très grincheux &lt;p&gt;</pre>
+        
+
+        <form action="/ma-page-de-traitement " method="post">
+            <div>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="user_name">
+            </div>
+            <div>
+                <label for="mail">e-mail :</label>
+                <input type="email" id="mail" name="user_mail">
+            </div>
+            <div>
+                <label for="msg">Message :</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </div>
+            <div class="button">
+                <button type="submit">Envoyer le message</button>
+            </div>
+        </form>
+</body>
+</html>
