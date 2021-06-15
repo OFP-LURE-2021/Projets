@@ -1,0 +1,31 @@
+body /* On travaille sur la balise body, donc sur TOUTE la page */
+{
+    background-color: blue; /* Le fond de la page sera noir */
+    color: rgb(245, 147, 0); /* Le texte de la page sera blanc */
+}
+.center
+{
+    text-align: center; /* Titre au centre */
+}
+a
+{
+    display: inline-block;
+}
+.right
+
+{
+    text-align: right;
+}
+
+img
+{
+    width: 500px;
+    height: 500px;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center
+}
+
