@@ -1,43 +1,35 @@
-.center
-{
+.center{
     text-align: center;
     color: blue;
 }
 
 /* menu deroulant debut */
-*{
-    margin: auto;
-    padding: auto;
-    font-family: cursive;
-}
-
-
 nav{
     width: 100%;
     margin: 0 auto;
     background-color: rgb(16, 183, 224);
     text-align: center;
     position: sticky;
-    top: 0px;
+    top: 10px;
 }
-
 nav ul{
-    list-style-type: none;
+    padding : 0; /* pas de marge intérieure */
+        margin : 0; /* ni extérieure */
+        list-style : none; /* on supprime le style par défaut de la liste */
+        line-height : 21px; /* on définit une hauteur pour chaque élément */
+        text-align : center; /* on centre le texte qui se trouve dans la liste */
 }
-
 nav ul li{
     float: left;
     width: 25%;
     text-align: center;
     position: relative;
 }
-
 nav ul::after{
     content: "";
     display: table;
     clear: both;
 }
-
 nav a{
     display: block;
     text-decoration: none;
@@ -45,11 +37,9 @@ nav a{
     border-bottom: 2px solid transparent;
     padding: 10px 0px;
 }
-
 nav a:hover{
     color: rgb(60, 57, 243);
 }
-
 .sous{
     display: none;
     box-shadow: 0px 1px 2px #CCC;
@@ -75,12 +65,7 @@ nav > ul li:hover .sous{
 }
 .menu-deroulant > a::after{
     content:" ▼";
-    font-size: 12px;
-}
-
-.conteneur{
-  margin: 50px 20px;
-  height: 1500px;
+    font-size: 10px;
 }
 /* menu deroulant fin */
 
@@ -139,12 +124,12 @@ form {
     border: 1px solid #999;
   }
   
-  input:focus, textarea:focus {
+input:focus, textarea:focus {
     /* Pour souligner légèrement les éléments actifs */
     border-color: #000;
   }
   
-  textarea {
+textarea {
     /* Pour aligner les champs texte multi‑ligne avec leur étiquette */
     vertical-align: top;
   
@@ -152,12 +137,12 @@ form {
     height: 5em;
   }
   
-  .button {
+.button {
     /* Pour placer le bouton à la même position que les champs texte */
     padding-left: 90px; /* même taille que les étiquettes */
   }
   
-  button {
+button{
     /* Cette marge supplémentaire représente grosso modo le même espace que celui
        entre les étiquettes et les champs texte */
     margin-left: .5em;
@@ -171,5 +156,33 @@ form {
     {
 color: red;
 
+    }
+}
+@media all and (max-width: 1280px)
+{
+    nav
+    {
+        width: auto;
+        text-align: left;
+    }
+    
+    nav ul
+    {
+        flex-direction: column;
+    }
+
+    nav li
+    {
+        padding-left: 4px;
+    }
+    
+    nav a
+    {
+        font-size: 1.1em;
+    }
+    
+    nav a:hover
+    {
+        border-bottom: 0;
     }
 }
