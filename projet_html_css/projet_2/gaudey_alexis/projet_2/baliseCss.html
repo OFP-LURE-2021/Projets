@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="baliseCss.css">
+    <title>CSS</title>
+</head>
+<body>
+    <article>
+        <header>
+            <h1>Propriété CSS</h1>
+            <nav role="navigation" class="menu">
+                <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="#0">Cours</a>
+                    <ul>
+                    <li><a href="baliseHtml.html">HTML</a></li>
+                    <li><a href="baliseCss.html">CSS</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a>
+                </ul>​
+            </nav>
+        </header>
+    
+        <div class="LaCouleur">      
+            <h2 class="couleur">La Couleur</h2>
+            <p>Les propriété sont <code>color</code> pour le texte et <code>background-color</code> pour
+            l'arrière-plan d'un élément.</p>
+            <p class="exemple">Tous les paragrapghes du site seront écrit en bleu</p>
+            <code>
+                <span class="nt">p</span>
+                <span class="p">{</span> <br>
+                <span class="k">color</span>
+                <span class="p">:</span>
+                <span class="kc">blue</span>
+                <span class="p">;</span>
+                <span class="p">}</span>
+            </code>
+            <p class="exemple">Le fond de tous les paragraphes est en gris</p>
+            <code>
+                <span class="nt">p</span>
+                <span class="p">{</span><br>
+                <span class="k">color</span>
+                <span class="p">:</span>
+                <span class="kc">blue</span>
+                <span class="p">;</span><br>
+                <span class="k">background-color</span>
+                <span class="p">:</span>
+                <span class="kc">gray</span>
+                <span class="p">;</span><br>
+                <span class="p">}</span>
+            </code>
+            <p>Plusieur choix son possibles:</p>
+            <ul>
+                <li>utilisation de mot-clé: 
+                    <code>red</code>,
+                    <code>black</code>,
+                    <code>blue</code>,
+                    <code>orange</code>,
+                    <code>pink</code>,
+                    <code>deepskyblue</code>, etc.
+                </li>
+                <li>utilisation du code héxadécimal: 
+                    <code>#FFFFFF</code>,
+                    <code>#325F9A</code>,
+                    <code>#09C</code>.
+                    Ce code est composé d’un
+                    <code>#</code> et de 6 caractères représentant les valeurs RVB.
+                </li>
+                <li>
+                    utilisation de fonctions de couleur:
+                    <code> rgb (R, V, B, a)</code>
+                </li>
+                <li>
+                    Pour choisir vos couleurs avec Chromafiltre ou Adobe Color. Liste complète des couleurs CSS
+                </li>
+            </ul>
+        </div>
+        <div class="LesTextes">
+            <h1>Les Textes</h1>
+            <h2 class="police">La Police</h2>
+            <p>C'est la propriété <code>font-family</code></p>
+            <p class="exemple">Choix de police</p>
+            <code>
+                <span class="nt">body</span>
+                <span class="p">{</span><br>
+                <span class="k">font-family</span>
+                <span class="p">:</span>
+                <span class="n">Trebuchet MS</span>
+                <span class="p">,</span>
+                <span class="n">Arial</span>
+                <span class="p">,</span>
+                <span class="n">sans-serif</span>
+                <span class="p">;</span><br>
+                <span class="p">}</span>
+            </code>
+            <p>Dans cet exemple, on spécifie que le texte doit être affiché avec la police
+                <code>Trebuchet MS</code>.<br> Si cette police n’est pas présente, le navigateur doit alors utiliser la police
+                <code>Arial</code>.<br> En dernier recours, le navigateur devra utiliser une police
+                <code>sans-serif</code><br>(Les serifs sont les petits empattements des lettres). Séparez les polices par des virgules.
+            </p>
+            <p>Il est également possible de <strong> demander au navigateur de charger un fichier de police personnalisé</strong>.<br> Le service Google Web Fonts permet de simplifier cela.</p>
+            <p class="exemple">Chargement d'une poliuce depuis HTML (c'est un fichier CSS)</p>
+            <code>
+                <span class="p"><</span>
+                <span class="nt">link</span>
+                <span class="na">href</span>
+                <span class="o">=</span>
+                <span class="s">"http://fonts.googleapis.com/css?family=Mr+Dafoe"</span>
+                <span class="na">rel</span>
+                <span class="o">=</span>
+                <span class="s">"stylesheet</span>
+                <span class="p">></span>
+            </code>
+            <p class="exemple">Utilisation depuis CSS</p>
+            <code>
+                <span class="nt">h1</span>
+                <span class="p">{</span><br>
+                <span class="k">font-family</span>
+                <span class="p">:</span>
+                <span class="n">Mr Dafoe</span>
+                <span class="n">,</span>
+                <span class="kc">sans-serif</span>
+                <span class="p">;</span><br>
+                <span class="p">}</span>
+            </code> 
+        </div>
+        <div class="taille">
+            <h2>La taille</h2>
+            <p>C'est la propriété <code>font-size</code></p>
+            <p>Il existe 2 types d’unités, les unités relatives et les unités absolues. <br> Il est préférable d’utiliser des unités relatives (qui s’adapatent aux différents tailles d’écran et de choix des utilisateurs), mais sont plus contraignantes à utiliser. L’unité de base est 
+            <code>1em</code>, qui correspond à 1 fois la taille de la police courante.</p> 
+            <p class="exemple">choix de taille de police</p>
+            <code>
+                <span class="nt">html</span>
+                <span class="p">{</span><br>
+                <span class="k">font-size</span>
+                <span class="p">:</span>
+                <span class="mf">0.9</span>
+                <span class="kt">em</span>
+                <span class="p">;</span><br>
+                <span class="p">}</span><br>
+                <span class="nt">p</span>
+                <span class="p">{</span><br>
+                <span class="k">font-size</span>
+                <span class="p">:</span>
+                <span class="mf">1.1</span>
+                <span class="kt">em</span>
+                <span class="p">;</span><br>
+                <span class="p">}</span>
+            </code> 
+            <p>Dans cet exemple, nous spécifions une taille de 0.9em pour l’ensemble de la page, puis une valeur de 1.1em aux éléments
+                <code>
+                    <span class="p"><</span>
+                    <span class="nt">p</span>
+                    <span class="p">></span>
+                </code>
+                . Cet élément aura donc une taille de 0.9*1.1 soit 0.99em, car les éléments ont hérités de la valeur 0.9.
+            </p>
+        </div>
+        <div class="LaGraisse">
+            <h2>La graisse</h2>
+            <p>C'est la propriété <code>font-weight</code>
+            . Les valeurs possibles sont <code>normal</code>,<code>bold</code>
+            ou une valeur numérique multiple de 100 (<code>400</code> = normal, <code>700</code>
+            = gras).</p>
+            <p>Pour mettre un texte en italique, la propriété est <code>font-style: italic</code>.</p>
+            </div>
+            <div class="LeSoulignement">
+                <h2>Le soulignement</h2>
+                <p>C'est la propriété <code>text-decoration</code>. Les valeurs possibles sont 
+                <code>underline</code>,<code>overline</code>,<code>line-through</code>
+            ou <code>none</code> pour enlever le soulignement (cas des liens hypertextes)</p>  
+            </div>
+            <div class="LesDimension">
+                <h2>Les dimension</h2>
+                <p>Pour bien comprendre, imaginez que chaque balise HTMLest une boite.
+                Cette boite peut avoir 2 largeurs par défaut, en fonction de son type d’élément HTML :
+                </p>
+                <ul>
+                    <li>élément de type <em>block</em>: la boite mesure toute la largeur de son parent</li>
+                    <li>élément de type <em>inline</em>: la boite mesurela taille de son contenu</li>
+                </ul>
+                <p>Par defaut, la hauteur d'une boite en fonction de son contenu.</p>
+                <p>Il est possible de spécifier une nouvelle largeur et hauteur de boite, mais <strong>
+                    seulement avec les éléments de type block.</strong> La propriété <code>width</code>
+                    modifie la largeur, <code>height</code> modifie la hauteur
+                </p>
+                <p class="exemple">Nouvelles dimensions</p>
+                <code>
+                    <span class="p">#</span>
+                    <span class="nn">menu</span>
+                    <span class="p">{</span><br>
+                    <span class="k">width</span>
+                    <span class="p">:</span>
+                    <span class="mi">180</span>
+                    <span class="kt">px</span>
+                    <span class="p">;</span>
+                    <span class="k">height</span>
+                    <span class="p">:</span>
+                    <span class="mi">400</span>
+                    <span class="kt">px</span>
+                    <span class="p">;</span><br>
+                    <span class="p">}</span>
+                </code>
+                <p>Dans cet exemple, l'élément avec <code>id="menu"</code> aura une taille de 180px
+                en largeur et de 400px en hauteur. <br>Cela implique que l'élément soit de type 
+                <em>block.</em></p>
+                <p>Il existe également les propriétés <code>min-width</code>,
+                <code>min-height</code>,<code>max-width</code>,<code>max-height</code>.</p>
+            </div>
+            <div class="LesDimensionMieu">
+                <h2>Les dimensions, en mieux</h2>
+                <p>Par défaut,<code>width</code> et <code>height</code>définissent la largeur et la hauteur interne d’un élément. Les bordures et les marges internes augmentent alors la taille totale. Pour simplifier les choses, CSS introduit une nouvelle propriété
+                <code>box-sizing</code>.</p>
+                <p class="exemeple">Modification du modéle de boite pour tous les éléments (*)</p>
+                <code>
+                    <span class="p">*</span>
+                    <span class="p">{</span><br>
+                    <span class="k">box-sizing</span>
+                    <span class="p">:</span>
+                    <span class="k">content-box</span>
+                    <span class="p">;</span><br>
+                    <span class="p">}</span>
+                </code>
+            </div>
+            <div class="LesBordures">
+                <h2>Les bordures</h2>
+                <p>C'est la propriété <code>border</code></p>
+                <p class="exemple">Les 3 valeurs obligatoires pour créer une bordure 
+                    (type, taille, couleur)</p>
+                    <code>
+                        <span class="p">#</span>
+                        <span class="nn">menu</span>
+                        <span class="p">{</span><br>
+                        <span class="k">border</span>
+                        <span class="p">:</span>
+                        <span class="kc">solid</span>
+                        <span class="mi">2</span>
+                        <span class="kt">px</span>
+                        <span class="kc">black</span>
+                        <span class="p">;</span><br>
+                        <span class="p">}</span>
+                    </code>
+                    <p>Les 3 propriétés indépendantes: <code>border-style</code>,
+                    <code>border-color</code>,<code>border-width</code>.</p>
+                    <p class="gris">En mode normal (<code>box-sizing: content-box</code>), la taille
+                    de la bordure est comprise dans la taille de la boite. Une boite avec 
+                    <code>width: 200px</code> et <code>border-width: 5px</code> mesure en 
+                    réalité 210px !</p>
+            </div>
+            <div class="LesMarges">
+                <h2>Les marges</h2>
+                <p>Il existe deux types de marges:</p>
+                <ul>
+                    <li><strong>Les marges externes : marges par rapport aux autres boites.</strong>
+                     C'est la propriété <code>margin</code></li>
+                    <li><strong>l=Les marges internes : marges à l'intérieur de la boite (entre la limite de
+                        la boite et le contenu). C'est la propriété <code>padding</code></strong></li>
+                </ul>
+                <p class="exemple">Ajout de marges internes de 10px et externes de 20px</p>
+                <code>
+                    <span class="p">#</span>
+                    <span class="nn">menu</span>
+                    <span class="p">{</span><br>
+                    <span class="k">margin</span>
+                    <span class="p">:</span>
+                    <span class="mi">20</span>
+                    <span class="kt">px</span>
+                    <span class="p">;</span><br>
+                    <span class="k">padding</span>
+                    <span class="p">:</span>
+                    <span class="mi">10</span>
+                    <span class="kt">px</span>
+                    <span class="p">;</span><br>
+                    <span class="p">}</span>
+                </code>
+                <p>Il est également possible d'appliquer une marge sur un seul coté de boite. Pour
+                    cela,on ajoute aux propriétés de marges: <code>-top</code>,<code>-bottom</code>,
+                    <code>-right</code> ou <code>-left</code></p>
+                <p class="exemple">Marge externe haute de 20px, margin interne gauche et droite de 10px</p>
+                <code>
+                    <span class="p">#</span>
+                    <span class="nn">menu</span>
+                    <span class="p">{</span>
+                    <span class="k">margin-top</span>
+                    <span class="p">:</span>
+                    <span class="mi">20</span>
+                    <span class="kt">px</span>
+                    <span class="p">;</span>
+                    <span class="k">padding-left</span>
+                    <span class="p">:</span>
+                    <span class="mi">10</span>
+                    <span class="kt">px</span>
+                    <span class="p">;</span>
+                    <span class="k">padding-right</span>
+                    <span class="p">:</span>
+                    <span class="mi">10</span>
+                    <span class="kt">px</span>
+                    <span class="p">;</span>
+                    <span class="p">}</span>
+                </code>
+                <p class="gris">Les marges ne s'appliquent que sur les boites de type block, sauf les 
+                    <code>padding-left</code> et <code>padding-right</code> qui peuvent être utilisés pour les boites inline. <br><br>
+                    En mode normal (<code>box-sizing: content-box</code>), les marges internes s'ajoutent à la 
+                    taille de l'élément. Une boite avec <code>width: 200px</code> et 
+                    <code>padding: 5px</code> mesure en réalité 210px !</p>
+                    <p>Il existe également <code>auto</code> qui permet un centrage horizontal des 
+                    éléments de type block au sein de leur parent.</p>
+                    <p class="exemple">Alignement horizontal d'un block</p>
+                    <code>
+                        <span class="p">#</span>
+                        <span class="nn">menu</span>
+                        <span class="p">{</span><br>
+                        <span class="k">margin</span>
+                        <span class="p">:</span>
+                        <span class="mi">0</span>
+                        <span class="kc">auto</span>
+                        <span class="p">;</span><br>
+                        <span class="p">}</span>
+                    </code>
+            </div>
+            <div class="LesListes">
+                <h2>Les listes</h2>
+                <p>C'est la propriété <code>list-style</code>.
+                Plusieurs valeurs possible, comme <code>disc</code>
+                ,<code>circle</code>,<code>square</code>,<code>decimal</code>
+                ou encore <code>none</code> pour enlever les puces.</p>
+            </div>
+            <div class="LesAlignements">
+                <h2>Les alignements</h2>
+                <p>Pour centrer horizontalement:</p>
+                <ul>
+                    <li>un élément <em>block</em>, c'est la règle <code>margin: auto</code></li>
+                    <li>un élément <em>inline</em>, c'est la propriété <code>text-align</code>.
+                    Les valeurs sont <code>left</code>,<code>center</code>,<code>right</code>
+                    ou <code>justify</code>.</li>
+                </ul>
+                <p>Pour centrer verticalemnt, cela dépend du mode de positionnement.</p>
+            </div>
+    </article>
+        
+    
+</body>
+</html>

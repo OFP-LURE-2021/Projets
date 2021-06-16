@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="baliseHtml.css">
+    <title>Html</title>
+</head>
+<body>
+    <article>
+        <header>
+            <h1>Balise HTML</h1>
+            <nav role="navigation" class="menu">
+                <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="#0">Cours</a>
+                    <ul>
+                    <li><a href="baliseHtml.html">HTML</a></li>
+                    <li><a href="baliseCss.html">CSS</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a>
+                </ul>​
+            </nav>
+        </header>
+        <h1 class="Balise">Balise</h1>
+        <p>On distingue deux catégorie de balise  : <strong>block</strong> ou <strong>inline</strong> , selon qu’elles définissent une zone autonome ou pas.</p>
+        <ul>
+            <li>Les balises <em>block</em> ne s’imbriquent pas, sauf dans le cas des balises structurantes. Chaque balise block crée un saut de ligne.</li>
+            <li>Les balises <em>inline</em> (ou en ligne) ne créent pas de bloc autonome. Elles permettent en général de mettre en relief certaines parties de texte, ou renseigner sur le contenu.</li>
+        </ul>
+        <h2 class="paragraphe">Les Paragraphes</h2>
+        <p>(<em>block</em>)</p>
+        <p>C'est la balise <span class="p"><</span>
+        <span class="nt">p</span>
+        <span class="p">></span></p>
+        
+        <ul>
+            <li>l’espacement des paragraphes se règle en CSS, inutile de saisir des paragraphes vides (ou pire des ...)</li>
+            <li>peut contenir une ou plusieurs lignes de texte</li>
+        </ul>
+        <h2 class="Les-titres">Les Titres</h2>
+        <p>(<em>block</em>)</p>
+        <p>Ce sont les balises
+            <span class="p"><</span>
+            <span class="nt">h1</span>
+            <span class="p">></span>
+            à
+            <span class="p"><</span>
+            <span class="nt">h6</span>
+            <span class="p">></span>
+        </p>
+        <br>
+        <p>Exemple:</p>
+        <div>
+            <p>
+                <span class="p"><</span>
+                <span class="nt">h1</span>
+                <span class="p">></span>
+                Titre niveau 1 <
+                <span class="nt">h1</span>
+                <span class="p">></span><br>
+                <span class="p"><</span>
+                <span class="nt">h2</span>
+                <span class="p">></span>
+                Titre niveau 2 <
+                <span class="nt">h2</span>
+                <span class="p">></span><br>
+                ... <br>
+                <span class="p"><</span>
+                <span class="nt">h6</span>
+                <span class="p">></span>
+                Titre niveau 6 <
+                    <span class="nt">h6</span>
+                    <span class="p">></span>
+            </p>
+        </div>
+        
+        <ul>
+            <li>la balise <code>h1</code> représente un titre de niveau 1: le titre de la page par exemple</li>
+            <li>on dispose de 5 autres balises pour désigner les niveaux de sous titres</li>
+            <li>ils organisent le contenu de la page de manière logique</li>
+            <li><strong>attention</strong> : ce n’est pas le numéro du titre dans la page</li>
+        </ul>
+        <h2 class="liste-a-puce">Les listes à puces</h2>
+        <p>(<em>block</em>)</p>
+        <p>La balise <code>ul</code> désigne une liste à puce non numérotée et la balise <code>ol</code> désigne une liste à puce numérotée.</p>
+        <ul>
+            <li>chaque liste est associée à la balise en ligne <code>li</code> qui désigne un élément de la liste</li>
+            <li>chaque <code>li</code> est matérialisé par une puce ou un numéro</li>
+            <li>l’aspect des puces est modifiable en CSS</li>
+            <li>on peut imbriquer les niveaux de liste.</li>
+        </ul>
+        <p>
+            Rappel: les 
+            <span class="p"><</span>
+            <span class="nt">li</span>
+            <span class="p">></span>
+            obligatoirement dans
+            <span class="p"><</span>
+            <span class="nt">ul</span>
+            <span class="p">></span>
+            /
+            <span class="p"><</span>
+            <span class="nt">ol</span>
+            <span class="p">></span>
+            , et
+            <span class="p"><</span>
+            <span class="nt">ul</span>
+            <span class="p">></span>
+            /
+            <span class="p"><</span>
+            <span class="nt">ol</span>
+            <span class="p">></span>
+            ne contient uniquement que des
+            <span class="p"><</span>
+            <span class="nt">li</span>
+            <span class="p">></span>
+        </p>
+        <h2 class="Les-lien-hyperlex"></h2>
+        <p>(<em>inline</em>)</p>
+        <p>
+            C’est la balise
+            <span class="p"><</span>
+            <span class="nt">a</span>
+            <span class="p">></span>
+        </p>
+        <div class="Puces">
+            <p>
+                <span class="p"><</span>
+                <span class="nt">a</span>
+                <span class="na">href</span>
+                <span class="o">=</span>
+                <span class="s">"UrlDeDestination"</span>
+                <span class="na">title</span>
+                <span class="o">=</span>
+                <span class="s">"InfoSurLeLien"</span>
+                <span class="p">></span>
+                Texte du lien 
+                <span class="p">< /</span>
+                <span class="nt">a</span>
+                <span class="p">></span>
+            </p>
+        </div>
+        
+        <ul>
+            <li>l’attribut obligatoire <code>href</code> désigne la destination du lien (son URL)
+            </li>
+            <li>une URL peut être :</li>
+            <ul>
+                <li>Absolue: <code>href="http://www.google.fr"</code> (commence par le protocole)</li>
+                <li>Relative: <code>href="page2.html"</code> (pas de protocole = par rapport à la page en cours dans l’arborescence des fichiers)</li>
+            </ul>
+            <li>l’apparence des liens est modifiable en CSS</li>
+        </ul>
+        <h2 class="Les-images-sematique">Les images sémantiques</h2>
+        <p>(<em>inline</em>)</p>
+        <p>C’est la balise
+            <span class="p"><</span>
+            <span class="nt">img</span>
+            <span class="p">></span>
+        </p>
+        <div class="ImgBalise">
+            <p>
+                <span class="p"><</span>
+                <span class="nt">img</span>
+                <span class="na">src</span>
+                <span class="o">=</span>
+                <span class="s">"UrlDeLImage"</span>
+                <span class="na">alt</span>
+                <span class="o">=</span>
+                <span class="s">"TexteAlternatif</span>
+                <span class="p">></span>
+            </p>
+        </div>
+        
+        <ul>
+            <li>c’est un élément inline (donc pas de bloc autonome)</li>
+            <li>pas de tag fermant</li>
+            <li>deux attributs obligatoires</li>
+            <ul>
+                <li><code>src</code> définit l’adresse de l’image à afficher (absolue ou relative)</li>
+                <li><code>alt</code>désigne le texte alternatif de l’image. Ce que l’image apporte comme informations (obligatoire pour une question d’accessibilité)</li>
+            </ul>
+            <li>pour les images décoratives (sans sens particulier), utiliser CSS</li>
+        </ul>
+        <h2 class="L-Accentuation">L’accentuation</h2>
+        <p>(<em>inline</em>)</p>
+        <p>
+            La balise
+            <span class="p"><</span>
+            <span class="nt">strong</span>
+            <span class="p">></span>
+            pour une forte accentuation.
+        </p>
+        <div class="Strong">
+            <p>
+                <span class="p"><</span>
+                <span class="nt">strong</span>
+                <span class="p">></span>
+                Texte important 
+                <span class="p">< /</span>
+                <span class="nt">strong</span>
+                <span class="p">></span>
+            </p>
+        </div>
+        <ul>
+            <li>signifie : texte fortement accentué. Attirer l’attention du lecteur sur le contenu d’un élément</li>
+            <li>le texte est par défaut représenté en gras</li>
+            <li>l’usage de 
+                <span class="p"><</span>
+                <span class="nt">b</span>
+                <span class="p">></span>
+                est toléré
+            </li>
+            <p>
+                La balise
+                <span class="p"><</span>
+                <span class="nt">em</span>
+                <span class="p">></span>
+                pour une accentuation.
+        </ul>
+        </p>
+        <div class="Em">
+            <p>
+                <span class="p"><</span>
+                <span class="nt">em</span>
+                <span class="p">></span>
+                Texte accentué 
+                <span class="p">< /</span>
+                <span class="nt">em</span>
+                <span class="p">></span>
+            </p>
+        </div>
+        <ul>
+            <li>signifie : texte accentué. Met en emphase certaines portions de textes</li>
+            <li>utilisé aussi pour les mots en langue étrangère</li>
+            <li>le texte est par défaut représenté en italique</li>
+            <li>l’usage de 
+                <span class="p"><</span>
+                <span class="nt">i</span>
+                <span class="p">></span>
+                    est toléré
+            </li>
+        </ul>
+        <h2 class="BaliseStruturante">Les balises structurantes</h2>
+        <p>(<em>block</em>)</p>
+        <p>
+            La balise
+            <span class="p"><</span>
+            <span class="nt">div</span>
+            <span class="p">></span>
+            structure la page :
+        </p>
+        <ul>
+            <li>cet élément n’a pas de sémantique particulière</li>
+            <li>utile principalement pour la mise en forme en CSS</li>
+            <li>souvent accompagné de l’attribut <U>id</U> ou <U>class</U></li>
+        </ul>
+        <p>Il existe également des éléments structurants sémantiques :</p>
+        <ul>
+            <li>
+                <span class="p"><</span>
+                <span class="nt">header</span>
+                <span class="p">></span>
+                définit un bloc d’entête (de site, d’article…)
+            </li>
+            <li>
+                <span class="p"><</span>
+                <span class="nt">footer</span>
+                <span class="p">></span>
+                définit un pied de page (de site, d’article…)
+            </li>
+            <li>
+                <span class="p"><</span>
+                <span class="nt">section</span>
+                <span class="p">></span>
+                définit une partie de site
+            </li>
+            <li>
+                <span class="p"><</span>
+                <span class="nt">article</span>
+                <span class="p">></span>
+                définit la zone de contenu textuel d’un site (qui peut être sorti de son contexte en restant compréhensible)
+            </li>
+            <li>
+                <span class="p"><</span>
+                <span class="nt">nav</span>
+                <span class="p">></span>
+                définit un bloc de navigation
+            </li>
+            <li>
+                <span class="p"><</span>
+                <span class="nt">aside</span>
+                <span class="p">></span>
+                définit un bloc d’informations complémentaires, annexes
+            </li>
+        </ul>
+        <h2 class="Tableaux">Les tableaux</h2>
+        <p>(<em>block</em>)</p>
+        <p>
+            L’utilisation de tableau en HTML se fait de la sorte: tout d’abord, utilisation de la balise
+            <span class="p"><</span>
+            <span class="nt">table</span>
+            <span class="p">></span>
+            pour créer le tableau. Ensuite, ajoutons une ligne avec la balise
+            <span class="p"><</span>
+            <span class="nt">tr</span>
+            <span class="p">></span>
+            . Chaque cellule est ensuite ajoutée à l’aide de 
+            <span class="p"><</span>
+            <span class="nt">td</span>
+            <span class="p">></span>
+        </p>
+        <ul>
+            <li>toutes les balises de tableau sont de types <em>block</em>, et donc leur taille est modifiable en CSS</li>
+            <li>
+                la balise
+                <span class="p"><</span>
+                <span class="nt">th</span>
+                <span class="p">></span>
+                est équivalente à
+                <span class="p"><</span>
+                <span class="nt">td</span>
+                <span class="p">></span>
+                mais pour des entêtes de cellule
+            </li>
+        </ul>
+        <h2 class="AutreBalise">Les autres balises</h2>
+        <ul>
+            <li>
+                <span class="p"><</span>
+                <span class="nt">audio</span>
+                <span class="p">></span>
+                permet d’insérer du son
+            </li>
+            <li>
+                <span class="p"><</span>
+                <span class="nt">video</span>
+                <span class="p">></span>
+                permet d’insérer une video
+            </li>
+            <li>
+                <span class="p"><</span>
+                <span class="nt">canvas</span>
+                <span class="p">></span>
+                définit un contexte graphique de dessin via JavaScript
+            </li>
+            <li>
+                <span class="p"><</span>
+                <span class="nt">dl</span>
+                <span class="p">></span>
+                /
+                <span class="p"><</span>
+                <span class="nt">dt</span>
+                <span class="p">></span>
+                /
+                <span class="p"><</span>
+                <span class="nt">dd</span>
+                <span class="p">></span>
+                pour une liste de définition
+            </li>
+            <li>
+                <span class="p"><</span>
+                <span class="nt">figure</span>
+                <span class="p">></span>
+                /
+                <span class="p"><</span>
+                <span class="nt">figcaption</span>
+                <span class="p">></span>
+                pour une figure accompagnée d’une légende (par exemple une image)
+            </li>
+            <li>
+                <span class="p"><</span>
+                <span class="nt">blockquote</span>
+                <span class="p">></span>
+                pour une citation
+            </li>
+            <li>
+                <span class="p"><</span>
+                <span class="nt">code</span>
+                <span class="p">></span>
+                pour afficher un bloc de code
+            </li>
+            <li>
+                <span class="p"><</span>
+                <span class="nt">map</span>
+                <span class="p">></span>
+                et
+                <span class="p"><</span>
+                <span class="nt">area</span>
+                <span class="p">></span>
+                pour créer une image-map
+            </li>
+            <li>
+                <span class="p"><</span>
+                <span class="nt">object</span>
+                <span class="p">></span>
+                pour insérer un objet complexe (plugin, applet…)
+            </li>
+            <li>
+                <span class="p"><</span>
+                <span class="nt">iframe</span>
+                <span class="p">></span>
+                pour intégrer une page HTML dans une autre
+            </li>
+            <li>
+                <span class="p"><</span>
+                <span class="nt">span</span>
+                <span class="p">></span>
+                est la balise neutre, sans sémantique. Peut être utile pour la mise en forme CSS
+            </li>
+            <li>
+                <span class="p"><</span>
+                <span class="nt">abbr</span>
+                <span class="p">></span>
+                pour une abréviation
+            </li>
+            <li>
+                <span class="p"><</span>
+                <span class="nt">time</span>
+                <span class="p">></span>
+                pour une date/heure
+            </li>
+            <li>
+                <span class="p"><</span>
+                <span class="nt">sub</span>
+                <span class="p">></span>
+                et
+                <span class="p"><</span>
+                <span class="nt">sup</span>
+                <span class="p">></span>
+                pour indice et exposant
+            </li>
+        </ul>
+    </article>
+</body>
+</html>
