@@ -1,0 +1,6 @@
+A l'aide de javascript créer des flip cards sur ce que vous avez appris au sein de la formation.
+
+exemple:
+
+recto: "bootstrap"
+verso "j'ai appris .... pour ...."
