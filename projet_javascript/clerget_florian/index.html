@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="carte.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="maincontainer">
+        <div class="d1 animate__animated animate__flipInY" id="carte"><h1>Défi bash n°1</h2></div>
+        <div class="back animate__animated animate__flipInY" id="back"><h2>le 1er défi bash consistait à faire un scipt visant à calculer son age :</h2>
+            <p><code>#!/bin/bash <br> currentYear=`date '+%Y'`<br> echo 'saisissez votre date de naissance' <br> read birthYear <br> result=$(($currentYear-$birthYear)) <br> echo tu as $result an </code></p>
+        </div>
+
+        <div class="card" id="card">
+            <div class="avant">
+                <h1>Défi bash n°2</h1>
+            </div>
+            <div class="arrière">
+                <h2>Le 2ieme défi bash visait à calculer un prix :</h1>
+                <p><code>#!/bin/bash <br>
+                    echo "Combien de photocopie ?"<br>
+                    read X<br>
+                    if [ $X -le 10 ]<br>
+                    then <br>
+                    result=$(echo "0.10*$X" | bc)<br>
+                    fi<br>
+                    if [ $X -gt 10 ]<br>
+                    then<br>
+                    result=$(echo "(10*0.10)+($X-10)*0.09" | bc)<br>
+                    fi<br>
+                    if [ $X -gt 30 ]<br>
+                    then <br>
+                    result=$(echo "(10*0.10)+(20*0.09)+($X-30)*0.08" | bc)<br>
+                    fi<br>
+                    echo "Tu dois payer $result euros</code></p>
+            </div>
+        </div>
+    </div>
+
+<script src="cartejs.js"></script>
+</body>
+</html>
