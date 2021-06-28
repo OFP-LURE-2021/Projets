@@ -1,0 +1,80 @@
+/*1ere carte*/
+
+body {
+    background-image: url("bubbles_svg.svg");
+    background-size: cover;
+    display: flex;
+}
+
+.container {
+width: 350px;
+height: 450px;
+}
+
+.d1 {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    background-color: #EF5FC6;
+    text-align: center;
+}
+
+.back {
+    display: none;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    background-color: green;
+    text-align: center;
+    transform: translate(500px);
+}
+
+/* deuxième carte */
+.maincontainer {
+    width: 350px;
+    height: 450px;
+    background: none;
+    transition: translate(-50%, -50%);
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+}
+
+.avant {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #ffc728;
+    color: black;
+    text-align: center;
+}
+
+.arrière {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: purple;
+    color: white;
+    text-align: center;
+    transform: rotateY(180deg);
+
+}
+
+.flipCard {
+    transform: rotateY(180deg);
+}
+
+@media all and (max-width: 1024px) {
+    
+ .container .d1 .back {
+     width: auto;
+     height: auto;
+ }
+}
