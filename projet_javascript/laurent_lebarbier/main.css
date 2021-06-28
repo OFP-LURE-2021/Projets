@@ -126,21 +126,8 @@
     line-height: 1.4;
   }
   section{
-    display: flex;
+      display: flex;
+      flex-wrap: wrap;
 }
 
-@media screen and (max-width: 800px)
-{
-  .card{
-    width:calc(50% - 2rem);
-    height:cacl(50% - 2rem);
-    }
-  }
-}
 
-@media screen and (max-width: 500px)
-{
-  .card{
-    width:100%;
-  }
-}
