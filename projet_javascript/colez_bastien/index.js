@@ -1,5 +1,4 @@
 const card = document.querySelectorAll(".card__inner");
-
 function flipCard() {
   this.classList.toggle('is-flipped');
 }
